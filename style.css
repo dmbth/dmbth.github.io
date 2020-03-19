@@ -29,7 +29,12 @@ h2 a:hover {
   
 }
 
-marquee {
+@keyframes scroll {
+  from {left: 2000px;}
+  to {left: -2000px;}
+}
+
+#title {
   position: fixed;
   top: 0;
   padding: 0;
@@ -41,6 +46,8 @@ marquee {
   margin-bottom: -40px;
   letter-spacing:8px;
   font-family:Helvetica Neue;
+  animation:scroll 20s infinite;
+  animation-timing-function:linear;
 }
 
 .fa {
